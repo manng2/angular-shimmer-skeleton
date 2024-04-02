@@ -1,1 +1,10 @@
-<shimmer-line/>
+<main>
+  <nav>
+    @for (item of navItems; track $index) {
+    <a [routerLink]="item.path">{{item.name}}</a>
+    }
+  </nav>
+  <div class="wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</main>

@@ -1,0 +1,27 @@
+section {
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: .75rem;
+}
+
+section .header {
+  margin-bottom: .75rem;
+  font-size: .875rem;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .header span {
+  cursor: pointer;
+}
+
+section .code {
+  margin-bottom: 1.5rem;
+  padding: 1rem .5rem;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+h6, h5 {
+  margin: 0;
+}

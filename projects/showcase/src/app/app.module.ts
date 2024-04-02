@@ -1,20 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {
+  ShimmerCircleComponent,
+  ShimmerConversationComponent,
+  ShimmerLineComponent,
+  ShimmerTableComponent,
+} from 'projects/angular-shimmer-skeleton/src/public-api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ShimmerLineComponent } from 'projects/angular-shimmer-skeleton/src/public-api';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ShimmerLineComponent
+    ShimmerLineComponent,
+    ShimmerCircleComponent,
+    ShimmerConversationComponent,
+    ShimmerTableComponent,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

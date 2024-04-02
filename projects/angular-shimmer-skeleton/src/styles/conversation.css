@@ -1,0 +1,11 @@
+.shimmer-conversation {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.shimmer-conversation__right {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}

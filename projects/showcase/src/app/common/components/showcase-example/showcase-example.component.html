@@ -1,0 +1,16 @@
+<section>
+  <div class="header">
+    <span><b>{{title()}}</b></span>
+    <div>
+      <span (click)="isShownCode.set(!isShownCode())">Show code</span>
+    </div>
+  </div>
+  @if (isShownCode()) {
+  <div class="code">
+    <code>
+      {{ code() }}
+    </code>
+  </div>
+  }
+  <ng-content></ng-content>
+</section>
