@@ -1,8 +1,17 @@
-<div class="examples">
-  <app-showcase-example title="Default" [code]="defaultCode">
-    <shimmer-circle/>
-  </app-showcase-example>
-  <app-showcase-example title="Size adjustment" [code]="sizeCode">
-    <shimmer-circle [size]="100"/>
-  </app-showcase-example>
-</div>
+<mat-tab-group>
+  <mat-tab label="API">
+    <div class="apis">
+      <app-showcase-api [apis]="apis"></app-showcase-api>
+    </div>
+  </mat-tab>
+  <mat-tab label="EXAMPLES">
+    <div class="examples">
+      <app-showcase-example title="Default" [code]="defaultCode">
+        <shimmer-circle />
+      </app-showcase-example>
+      <app-showcase-example title="Size adjustment" [code]="sizeCode">
+        <shimmer-circle [size]="100" />
+      </app-showcase-example>
+    </div>
+  </mat-tab>
+</mat-tab-group>

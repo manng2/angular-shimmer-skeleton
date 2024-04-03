@@ -17,7 +17,11 @@ const routes: Routes = [
   {
     path: 'conversation',
     loadComponent: () => import('./components/conversation-showcase/conversation-showcase.component').then(m => m.ConversationShowcaseComponent)
-  }
+  },
+  {
+    path: 'product',
+    loadComponent: () => import('./components/product-showcase/product-showcase.component').then(m => m.ProductShowcaseComponent)
+  },
 ];
 
 @NgModule({

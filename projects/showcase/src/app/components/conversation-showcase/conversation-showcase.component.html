@@ -1,20 +1,35 @@
-<div class="examples">
-  <app-showcase-example title="Default" [code]="defaultCode">
-    <shimmer-conversation/>
-  </app-showcase-example>
-  <app-showcase-example title="Avatar size adjust" [code]="avatarSizeCode">
-    <shimmer-conversation [avatarSize]="64"/>
-  </app-showcase-example>
-  <app-showcase-example title="Name width adjust" [code]="nameWidthCode">
-    <shimmer-conversation [nameWidth]="250"/>
-  </app-showcase-example>
-  <app-showcase-example title="Name height adjust" [code]="nameHeightCode">
-    <shimmer-conversation [nameHeight]="20"/>
-  </app-showcase-example>
-  <app-showcase-example title="Message Width adjust" [code]="messageWidthCode">
-    <shimmer-conversation [messageWidth]="300"/>
-  </app-showcase-example>
-  <app-showcase-example title="Message height adjust" [code]="messageHeightCode">
-    <shimmer-conversation [messageHeight]="15"/>
-  </app-showcase-example>
-</div>
+<mat-tab-group>
+  <mat-tab label="API">
+    <div class="apis">
+      <app-showcase-api [apis]="apis"></app-showcase-api>
+    </div>
+  </mat-tab>
+  <mat-tab label="EXAMPLES">
+    <div class="examples">
+      <app-showcase-example title="Default" [code]="defaultCode">
+        <shimmer-conversation />
+      </app-showcase-example>
+      <app-showcase-example title="Avatar size adjust" [code]="avatarSizeCode">
+        <shimmer-conversation [avatarSize]="64" />
+      </app-showcase-example>
+      <app-showcase-example title="Name width adjust" [code]="nameWidthCode">
+        <shimmer-conversation [nameWidth]="250" />
+      </app-showcase-example>
+      <app-showcase-example title="Name height adjust" [code]="nameHeightCode">
+        <shimmer-conversation [nameHeight]="20" />
+      </app-showcase-example>
+      <app-showcase-example
+        title="Message Width adjust"
+        [code]="messageWidthCode"
+      >
+        <shimmer-conversation [messageWidth]="300" />
+      </app-showcase-example>
+      <app-showcase-example
+        title="Message height adjust"
+        [code]="messageHeightCode"
+      >
+        <shimmer-conversation [messageHeight]="15" />
+      </app-showcase-example>
+    </div>
+  </mat-tab>
+</mat-tab-group>

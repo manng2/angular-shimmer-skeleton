@@ -1,9 +1,11 @@
 <main>
-  <nav>
-    @for (item of navItems; track $index) {
-    <a [routerLink]="item.path">{{item.name}}</a>
-    }
-  </nav>
+  <div class="nav-bar">
+    <nav>
+      @for (item of navItems; track $index) {
+      <span [routerLink]="item.path" routerLinkActive="active">{{item.name}}</span>
+      }
+    </nav>
+  </div>
   <div class="wrapper">
     <router-outlet></router-outlet>
   </div>

@@ -7,22 +7,16 @@
   <mat-tab label="EXAMPLES">
     <div class="examples">
       <app-showcase-example title="Default" [code]="defaultCode">
-        <shimmer-table />
+        <shimmer-product />
       </app-showcase-example>
-
-      <app-showcase-example title="Rows adjustment" [code]="rowCode">
-        <shimmer-table [rows]="10" />
+      <app-showcase-example title="With Image" [code]="avatarWidthCode">
+        <shimmer-product [avatarWidth]="250"/>
       </app-showcase-example>
-
-      <app-showcase-example title="Columns adjustment" [code]="columnCode">
-        <shimmer-table [columns]="3" />
+      <app-showcase-example title="First Line Width" [code]="firstLineWidthCode">
+        <shimmer-product [firstLineWidth]="250"/>
       </app-showcase-example>
-
-      <app-showcase-example
-        title="Rows and columns adjustment"
-        [code]="colSpansCode"
-      >
-        <shimmer-table [colSpans]="colSpans" />
+      <app-showcase-example title="Second Line Width" [code]="secondLineWidthCode">
+    <shimmer-product [secondLineWidth]="250"/>
       </app-showcase-example>
     </div>
   </mat-tab>

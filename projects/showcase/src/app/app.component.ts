@@ -27,5 +27,9 @@ export class AppComponent {
       name: ' Conversation',
       path: 'conversation',
     },
+    {
+      name: 'Product',
+      path: 'product',
+    },
   ];
 }

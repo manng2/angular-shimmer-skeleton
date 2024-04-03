@@ -1,0 +1,9 @@
+.shimmer-product__image {
+    margin-bottom: .75rem;
+}
+
+.shimmer-product__info {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}

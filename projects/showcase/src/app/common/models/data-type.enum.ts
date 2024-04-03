@@ -1,5 +1,6 @@
 export enum DataTypeEnum {
   Number = 'number',
   String = 'string',
-  Boolean = 'boolean'
+  Boolean = 'boolean',
+  ArrayNumber = 'number[]',
 }
