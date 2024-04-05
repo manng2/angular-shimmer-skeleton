@@ -6,14 +6,6 @@
 
 `npm i angular-shimmer-skeleton`
 
-or
-
-`yarn add angular-shimmer-skeleton`
-
-or
-
-`pnpm add angular-shimmer-skeleton`
-
 ### Contribute
 
 Welcome help me to build this awesome lib.
