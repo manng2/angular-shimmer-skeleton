@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "publish": "cd projects/angular-shimmer-skeleton && npm version patch && ng build --project angular-shimmer-skeleton --prod && cd ../../dist/angular-shimmer-skeleton && npm publish"
   },
   "private": true,
   "dependencies": {
