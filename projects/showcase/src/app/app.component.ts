@@ -12,8 +12,8 @@ export class AppComponent {
     path: string;
   }> = [
     {
-      name: 'Line',
-      path: 'line',
+      name: 'Rect',
+      path: 'rect',
     },
     {
       name: 'Circle',

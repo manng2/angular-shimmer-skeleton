@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { ShimmerCircleComponent } from './circle.component';
-import { ShimmerLineComponent } from './line.component';
+import { ShimmerRectComponent } from './rect.component';
 
 @Component({
   selector: 'shimmer-conversation',
@@ -8,14 +8,14 @@ import { ShimmerLineComponent } from './line.component';
     <div class="shimmer-conversation">
         <shimmer-circle [size]="avatarSize()"></shimmer-circle>
         <div class="shimmer-conversation__right">
-            <shimmer-line [width]="nameWidth()" [height]="nameHeight()"></shimmer-line>
-            <shimmer-line [width]="messageWidth()" [height]="messageHeight()"></shimmer-line>
+            <shimmer-rect [width]="nameWidth()" [height]="nameHeight()"></shimmer-rect>
+            <shimmer-rect [width]="messageWidth()" [height]="messageHeight()"></shimmer-rect>
         </div>
     </div>
   `,
   styleUrls: ['../styles/conversation.css', '../styles/animation.css'],
   standalone: true,
-  imports: [ShimmerCircleComponent, ShimmerLineComponent],
+  imports: [ShimmerCircleComponent, ShimmerRectComponent],
 })
 export class ShimmerConversationComponent {
   readonly avatarSize = input<number>(40);

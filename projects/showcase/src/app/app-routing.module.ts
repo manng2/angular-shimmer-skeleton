@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'line',
-    loadComponent: () => import('./components/line-showcase/line-showcase.component').then(m => m.LineShowcaseComponent)
+    path: 'rect',
+    loadComponent: () => import('./components/rect-showcase/rect-showcase.component').then(m => m.RectShowcaseComponent)
   },
   {
     path: 'circle',

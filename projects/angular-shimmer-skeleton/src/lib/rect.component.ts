@@ -1,19 +1,19 @@
 import { Component, computed, input } from '@angular/core';
 
 @Component({
-  selector: 'shimmer-line',
+  selector: 'shimmer-rect',
   template: `
     <div
-      class="shimmer-line shimmer-pulse"
+      class="shimmer-rect shimmer-pulse"
       [style.width]="computedWidth()"
       [style.height.px]="height()"
       [style.border-radius]="borderRadius()"
     ></div>
   `,
   standalone: true,
-  styleUrls: ['../styles/animation.css', '../styles/line.css'],
+  styleUrls: ['../styles/animation.css', '../styles/rect.css'],
 })
-export class ShimmerLineComponent {
+export class ShimmerRectComponent {
   readonly width = input<number | string>();
   readonly height = input<number>();
   readonly borderRadius = input<string>();

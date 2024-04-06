@@ -5,7 +5,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {
   ShimmerCircleComponent,
   ShimmerConversationComponent,
-  ShimmerLineComponent,
+  ShimmerRectComponent,
   ShimmerTableComponent,
 } from 'projects/angular-shimmer-skeleton/src/public-api';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ShimmerLineComponent,
+    ShimmerRectComponent,
     ShimmerCircleComponent,
     ShimmerConversationComponent,
     ShimmerTableComponent,

@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { ShimmerLineComponent } from './line.component';
+import { ShimmerRectComponent } from './rect.component';
 import { ShimmerCircleComponent } from './circle.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { ShimmerCircleComponent } from './circle.component';
       <tr>
         @for(i of _columns(); track $index) {
         <th [attr.colspan]="colSpans()[$index]">
-          <shimmer-line width="50" [height]="16" borderRadius="0px"></shimmer-line>
+          <shimmer-rect width="50" [height]="16" borderRadius="0px"></shimmer-rect>
         </th>
         }
       </tr>
@@ -19,7 +19,7 @@ import { ShimmerCircleComponent } from './circle.component';
       <tr>
         @for(j of _columns(); track $index) {
         <td [attr.colspan]="colSpans()[$index]">
-          <shimmer-line [isRandomWidth]="true" [height]="16" borderRadius="0px"></shimmer-line>
+          <shimmer-rect [isRandomWidth]="true" [height]="16" borderRadius="0px"></shimmer-rect>
         </td>
         }
       </tr>
@@ -27,7 +27,7 @@ import { ShimmerCircleComponent } from './circle.component';
     </table>
   `,
   styleUrls: ['../styles/table.css', '../styles/animation.css'],
-  imports: [ShimmerLineComponent, ShimmerCircleComponent],
+  imports: [ShimmerRectComponent, ShimmerCircleComponent],
 })
 export class ShimmerTableComponent {
   readonly rows = input<number>(5);
